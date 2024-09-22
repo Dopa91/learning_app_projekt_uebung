@@ -46,10 +46,11 @@ class StartPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 36),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 24),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 24),
               child: MyNewButton(
                 newText: 'Reise Starten',
+                nextSite: () => Navigator.pushNamed(context, "/loginpage"),
               ),
             ),
           ],
