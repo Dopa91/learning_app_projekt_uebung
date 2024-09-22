@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_app_projekt_uebung/pages/login_page.dart';
 import 'package:learning_app_projekt_uebung/pages/star_page.dart';
 
 void main() {
@@ -11,9 +12,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: StartPage(),
+      home: const StartPage(),
+      routes: {
+        '/loginpage': (context) => const LoginPage(),
+        //'/registerpage': (context) => RegisterPage(),
+      },
     );
   }
 }
