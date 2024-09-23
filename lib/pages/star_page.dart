@@ -31,7 +31,7 @@ class StartPage extends StatelessWidget {
             const SizedBox(height: 32),
             Center(
               child: Image.asset(
-                "lib/images/test_k.png",
+                "lib/images/test_newnew.png",
                 height: 512,
               ),
             ),
@@ -45,7 +45,7 @@ class StartPage extends StatelessWidget {
                     color: Colors.white),
               ),
             ),
-            const SizedBox(height: 36),
+            const SizedBox(height: 32),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 24),
               child: MyNewButton(
