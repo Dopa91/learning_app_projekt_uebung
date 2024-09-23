@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_app_projekt_uebung/pages/homepage.dart';
 import 'package:learning_app_projekt_uebung/pages/login_page.dart';
 import 'package:learning_app_projekt_uebung/pages/star_page.dart';
 
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/loginpage': (context) => const LoginPage(),
         //'/registerpage': (context) => RegisterPage(),
+        '/homepage': (context) => const HomePage(),
       },
     );
   }
