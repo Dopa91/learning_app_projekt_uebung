@@ -15,7 +15,7 @@ class LoginPage extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset("lib/images/kroenchen_new.png", height: 512),
+                Image.asset("lib/images/kroenchen_new.png"),
               ],
             ),
             const Padding(

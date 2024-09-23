@@ -25,14 +25,14 @@ class StartPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 12),
-                Image.asset("lib/images/crown.png", height: 64),
+                Image.asset("lib/images/crown_st.png", height: 24),
               ],
             ),
             const SizedBox(height: 32),
             Center(
               child: Image.asset(
-                "lib/images/kroenchen_new.png",
-                height: 420,
+                "lib/images/test_k.png",
+                height: 512,
               ),
             ),
             const Padding(
