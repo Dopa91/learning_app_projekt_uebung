@@ -74,7 +74,7 @@ class LoginPage extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
             child: MyNewButton(
               newText: "Login",
-              nextSite: () => Navigator.pushNamed(context, "/loginpage"),
+              nextSite: () => Navigator.pushNamed(context, "/homepage"),
             ),
           ),
         ],
