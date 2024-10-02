@@ -6,9 +6,14 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: Color.fromARGB(255, 217, 192, 242),
-      body: SafeArea(
+    return Scaffold(
+      bottomNavigationBar: NavigationBar(destinations: const [
+        NavigationDestination(icon: Icon(Icons.home), label: "Homepage"),
+        NavigationDestination(icon: Icon(Icons.book), label: "Diary"),
+        NavigationDestination(icon: Icon(Icons.settings), label: "Settings"),
+      ]),
+      backgroundColor: const Color.fromARGB(255, 217, 192, 242),
+      body: const SafeArea(
         child: Column(
           children: [
             Center(
