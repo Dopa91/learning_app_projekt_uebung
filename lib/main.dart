@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learning_app_projekt_uebung/pages/homepage.dart';
 import 'package:learning_app_projekt_uebung/pages/login_page.dart';
-import 'package:learning_app_projekt_uebung/pages/star_page.dart';
+import 'package:learning_app_projekt_uebung/pages/start_page.dart';
 
 void main() {
   runApp(const MyApp());
