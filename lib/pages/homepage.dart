@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:learning_app_projekt_uebung/pages/diary_screen.dart';
 import 'package:learning_app_projekt_uebung/pages/homepage_screen.dart';
 import 'package:learning_app_projekt_uebung/pages/settings_screen.dart';
-import 'package:learning_app_projekt_uebung/pages/user_list.dart';
+import 'package:learning_app_projekt_uebung/components/user_list.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -38,29 +39,6 @@ class _HomePageState extends State<HomePage> {
       ),
       backgroundColor: const Color.fromARGB(255, 217, 192, 242),
       body: widgets[currentIndex],
-    );
-  }
-}
-
-class DiaryScreen extends StatelessWidget {
-  const DiaryScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        forceMaterialTransparency: true,
-        automaticallyImplyLeading: false,
-      ),
-      backgroundColor: const Color.fromARGB(255, 217, 192, 242),
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("Your Diary"),
-          ],
-        ),
-      ),
     );
   }
 }
