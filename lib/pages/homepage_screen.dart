@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:learning_app_projekt_uebung/pages/first_calendar.dart';
-import 'package:learning_app_projekt_uebung/pages/user.dart';
+import 'package:learning_app_projekt_uebung/components/first_calendar.dart';
+import 'package:learning_app_projekt_uebung/components/user.dart';
 
 class HomepageScreen extends StatelessWidget {
   const HomepageScreen({
