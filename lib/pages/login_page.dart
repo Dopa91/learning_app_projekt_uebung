@@ -17,7 +17,7 @@ class LoginPage extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset("lib/images/test_newnew.png"),
+              Image.asset("assets/images/test_newnew.png"),
             ],
           ),
           const Padding(
@@ -71,10 +71,18 @@ class LoginPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+            padding: const EdgeInsets.only(top: 64, right: 24, left: 24),
             child: MyNewButton(
               newText: "Login",
               nextSite: () => Navigator.pushNamed(context, "/homepage"),
+              icon: Icons.arrow_forward,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(top: 12, right: 24, left: 24),
+            child: MyNewButton(
+              newText: "Registrieren",
+              nextSite: () => Navigator.pushNamed(context, "/registerpage"),
               icon: Icons.arrow_forward,
             ),
           ),
