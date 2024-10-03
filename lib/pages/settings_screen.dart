@@ -6,28 +6,28 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
+    return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(
+          const Icon(
             Icons.settings,
             size: 256,
           ),
-          SizedBox(
+          const SizedBox(
             height: 128,
           ),
           Column(
             children: [
               Padding(
-                padding: EdgeInsets.only(left: 72, right: 72),
+                padding: const EdgeInsets.only(left: 72, right: 72),
                 child: MyNewButton(
                   newText: "Logout",
-                  nextSite: null,
+                  nextSite: () => Navigator.pushNamed(context, "/loginpage"),
                   icon: Icons.logout,
                 ),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(top: 16, left: 72, right: 72),
                 child: MyNewButton(
                   newText: "Konto Löschen",
