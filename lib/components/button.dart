@@ -5,7 +5,10 @@ class MyNewButton extends StatelessWidget {
     super.key,
     required this.newText,
     required this.nextSite,
+    required this.icon,
   });
+
+  final IconData? icon;
 
   final String newText;
   final void Function()? nextSite;
@@ -21,8 +24,10 @@ class MyNewButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(24),
         ),
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Expanded(
+              child: SizedBox(),
+            ),
             Text(
               newText,
               style: const TextStyle(
@@ -30,9 +35,9 @@ class MyNewButton extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                   color: Colors.white),
             ),
-            const SizedBox(width: 12),
-            const Icon(
-              Icons.arrow_forward_ios,
+            const Expanded(child: SizedBox()),
+            Icon(
+              icon,
               color: Colors.white,
             ),
           ],
