@@ -51,6 +51,7 @@ class StartPage extends StatelessWidget {
               child: MyNewButton(
                 newText: 'Reise Starten',
                 nextSite: () => Navigator.pushNamed(context, "/loginpage"),
+                icon: Icons.arrow_forward,
               ),
             ),
           ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learning_app_projekt_uebung/pages/first_calendar.dart';
 import 'package:learning_app_projekt_uebung/pages/user.dart';
+import 'package:learning_app_projekt_uebung/pages/user_list.dart';
 
 class HomepageScreen extends StatelessWidget {
   const HomepageScreen({
@@ -24,21 +25,21 @@ class HomepageScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    child: const Column(
+                    child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.face_sharp,
                           size: 96,
                         ),
-                        Text(
+                        const Text(
                           "Willkommen,",
                           style: TextStyle(
                               fontSize: 24, fontWeight: FontWeight.w600),
                         ),
                         Text(
-                          "Mina",
-                          style: TextStyle(
+                          user.name,
+                          style: const TextStyle(
                               fontSize: 24, fontWeight: FontWeight.w700),
                         ),
                       ],

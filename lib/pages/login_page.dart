@@ -75,6 +75,7 @@ class LoginPage extends StatelessWidget {
             child: MyNewButton(
               newText: "Login",
               nextSite: () => Navigator.pushNamed(context, "/homepage"),
+              icon: Icons.arrow_forward,
             ),
           ),
         ],
