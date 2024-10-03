@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:learning_app_projekt_uebung/pages/first_calendar.dart';
 import 'package:learning_app_projekt_uebung/pages/homepage_screen.dart';
 import 'package:learning_app_projekt_uebung/pages/settings_screen.dart';
-import 'package:learning_app_projekt_uebung/pages/user.dart';
 import 'package:learning_app_projekt_uebung/pages/user_list.dart';
 
 class HomePage extends StatefulWidget {
