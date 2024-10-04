@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:learning_app_projekt_uebung/components/user_list.dart';
-import 'package:learning_app_projekt_uebung/pages/homepage.dart';
+import 'package:learning_app_projekt_uebung/pages/homepage_bottomNavBar.dart';
 import 'package:learning_app_projekt_uebung/pages/login_page.dart';
 import 'package:learning_app_projekt_uebung/pages/register_page_end.dart';
 import 'package:learning_app_projekt_uebung/pages/register_page_three.dart';
