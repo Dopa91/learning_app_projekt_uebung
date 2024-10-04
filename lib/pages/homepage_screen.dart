@@ -25,10 +25,9 @@ class HomepageScreen extends StatelessWidget {
                 children: [
                   Icon(Icons.face_sharp, size: 96),
                   Spacer(),
-                  Image(
-                    width: 172,
-                    height: 172,
-                    image: AssetImage("assets/images/niceOMG.gif"),
+                  CircleAvatar(
+                    radius: 96,
+                    backgroundImage: AssetImage("assets/images/niceOMG.gif"),
                   ),
                 ],
               ),
