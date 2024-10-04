@@ -23,7 +23,10 @@ class HomepageScreen extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
                 children: [
-                  Icon(Icons.face_sharp, size: 96),
+                  CircleAvatar(
+                    radius: 72,
+                    backgroundImage: AssetImage("assets/images/bober.jpg"),
+                  ),
                   Spacer(),
                   CircleAvatar(
                     radius: 96,
