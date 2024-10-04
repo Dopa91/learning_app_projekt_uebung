@@ -22,36 +22,48 @@ class HomepageScreen extends StatelessWidget {
         child: Column(
           children: [
             Center(
-              child: Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Row(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          const Icon(
-                            Icons.face_sharp,
-                            size: 96,
-                          ),
-                          const Text(
-                            "Willkommen,",
-                            style: TextStyle(
-                                fontSize: 24, fontWeight: FontWeight.w600),
-                          ),
-                          Text(
-                            user.name,
-                            style: const TextStyle(
-                                fontSize: 24, fontWeight: FontWeight.w700),
-                          ),
-                        ],
-                      ),
+              child: Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16),
                     ),
-                  ],
-                ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width,
+                          child: const Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.face_sharp,
+                                size: 96,
+                              ),
+                              Image(
+                                width: 172,
+                                height: 172,
+                                image:
+                                    AssetImage("assets/images/sunnyplace.jpg"),
+                              ),
+                            ],
+                          ),
+                        ),
+                        const Text(
+                          "Willkommen,",
+                          style: TextStyle(
+                              fontSize: 24, fontWeight: FontWeight.w600),
+                        ),
+                        Text(
+                          user.name,
+                          style: const TextStyle(
+                              fontSize: 24, fontWeight: FontWeight.w700),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
             ),
             const Padding(
