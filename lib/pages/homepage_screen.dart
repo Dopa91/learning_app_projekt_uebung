@@ -3,10 +3,7 @@ import 'package:learning_app_projekt_uebung/components/first_calendar.dart';
 import 'package:learning_app_projekt_uebung/components/user.dart';
 
 class HomepageScreen extends StatelessWidget {
-  const HomepageScreen({
-    super.key,
-    required this.user,
-  });
+  const HomepageScreen({super.key, required this.user});
 
   final User user;
 
@@ -20,51 +17,29 @@ class HomepageScreen extends StatelessWidget {
           ),
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Center(
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
                 children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SizedBox(
-                          width: MediaQuery.of(context).size.width,
-                          child: const Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                              Icon(
-                                Icons.face_sharp,
-                                size: 96,
-                              ),
-                              Image(
-                                width: 172,
-                                height: 172,
-                                image:
-                                    AssetImage("assets/images/sunnyplace.jpg"),
-                              ),
-                            ],
-                          ),
-                        ),
-                        const Text(
-                          "Willkommen,",
-                          style: TextStyle(
-                              fontSize: 24, fontWeight: FontWeight.w600),
-                        ),
-                        Text(
-                          user.name,
-                          style: const TextStyle(
-                              fontSize: 24, fontWeight: FontWeight.w700),
-                        ),
-                      ],
-                    ),
+                  Icon(Icons.face_sharp, size: 96),
+                  Spacer(),
+                  Image(
+                    width: 172,
+                    height: 172,
+                    image: AssetImage("assets/images/sunnyplace.jpg"),
                   ),
                 ],
               ),
+            ),
+            const Text(
+              "Willkommen,",
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+            ),
+            Text(
+              user.name,
+              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
             ),
             const Padding(
               padding: EdgeInsets.only(top: 24),
