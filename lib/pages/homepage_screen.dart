@@ -35,13 +35,20 @@ class HomepageScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const Text(
-              "Willkommen,",
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+            const Padding(
+              padding: EdgeInsets.only(left: 16.0),
+              child: Text(
+                "Willkommen,",
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+              ),
             ),
-            Text(
-              user.name,
-              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+            Padding(
+              padding: const EdgeInsets.only(left: 16.0),
+              child: Text(
+                user.name,
+                style:
+                    const TextStyle(fontSize: 24, fontWeight: FontWeight.w700),
+              ),
             ),
             const Padding(
               padding: EdgeInsets.only(top: 24),
