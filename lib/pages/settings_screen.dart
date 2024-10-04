@@ -8,8 +8,10 @@ class SettingsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-          image:
-              DecorationImage(image: AssetImage("assets/images/test_2.png"))),
+        image: DecorationImage(
+          image: AssetImage("assets/images/test_2.png"),
+        ),
+      ),
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
