@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learning_app_projekt_uebung/components/info_snack_bar.dart';
 
 class DiaryScreen extends StatelessWidget {
   const DiaryScreen({super.key});
@@ -15,16 +16,20 @@ class DiaryScreen extends StatelessWidget {
         decoration: const BoxDecoration(
             image:
                 DecorationImage(image: AssetImage("assets/images/test_2.png"))),
-        child: const Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Text(
-                "Your Diary",
-                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 26),
+        child: Column(
+          children: [
+            const Center(
+              child: Column(
+                children: [
+                  Text(
+                    "Your Diary",
+                    style: TextStyle(fontWeight: FontWeight.w700, fontSize: 26),
+                  ),
+                ],
               ),
-            ],
-          ),
+            ),
+            InfoSnackBar(image: Image.asset("assets/images/nice.gif")),
+          ],
         ),
       ),
     );
