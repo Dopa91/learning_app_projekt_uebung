@@ -28,7 +28,7 @@ class HomepageScreen extends StatelessWidget {
                   Image(
                     width: 172,
                     height: 172,
-                    image: AssetImage("assets/images/sunnyplace.jpg"),
+                    image: AssetImage("assets/images/nice.gif"),
                   ),
                 ],
               ),
