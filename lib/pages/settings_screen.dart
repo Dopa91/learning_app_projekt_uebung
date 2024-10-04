@@ -17,8 +17,9 @@ class SettingsScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Icon(
-              Icons.settings,
+              Icons.settings_outlined,
               size: 256,
+              color: Color.fromARGB(255, 7, 7, 41),
             ),
             const SizedBox(
               height: 128,
