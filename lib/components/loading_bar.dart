@@ -27,7 +27,7 @@ class LoadingBar extends StatelessWidget {
       children: [
         Container(
           decoration: BoxDecoration(
-              color: Colors.blue,
+              color: const Color.fromARGB(255, 16, 97, 219),
               borderRadius: BorderRadius.horizontal(
                 left: Radius.circular(borderLeft),
                 right: Radius.circular(borderRight),
