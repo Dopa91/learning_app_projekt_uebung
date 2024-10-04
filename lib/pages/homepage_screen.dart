@@ -25,7 +25,7 @@ class HomepageScreen extends StatelessWidget {
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         const Icon(
                           Icons.face_sharp,
