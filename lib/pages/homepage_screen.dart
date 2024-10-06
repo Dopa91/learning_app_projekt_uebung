@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:learning_app_projekt_uebung/components/first_calendar.dart';
 import 'package:learning_app_projekt_uebung/components/my_image_slider.dart';
 import 'package:learning_app_projekt_uebung/components/user.dart';
