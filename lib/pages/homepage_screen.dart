@@ -26,7 +26,7 @@ class HomepageScreen extends StatelessWidget {
               child: Row(
                 children: [
                   CircleAvatar(
-                    radius: 72,
+                    radius: 60,
                     backgroundImage: AssetImage("assets/images/bober.jpg"),
                   ),
                   Spacer(),
