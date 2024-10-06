@@ -34,6 +34,10 @@ class MyImageSlider extends StatelessWidget {
           "assets/images/snowplace.jpg",
           fit: BoxFit.fitWidth,
         ),
+        Image.asset(
+          "assets/images/redbluesky.jpg",
+          fit: BoxFit.fitWidth,
+        ),
       ],
     );
   }
