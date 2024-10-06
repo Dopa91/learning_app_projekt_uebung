@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:learning_app_projekt_uebung/components/first_calendar.dart';
+import 'package:learning_app_projekt_uebung/components/my_image_slider.dart';
 import 'package:learning_app_projekt_uebung/components/user.dart';
 
 class HomepageScreen extends StatelessWidget {
@@ -20,43 +21,16 @@ class HomepageScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 16.0),
               child: Row(
                 children: [
-                  const CircleAvatar(
+                  CircleAvatar(
                     radius: 72,
                     backgroundImage: AssetImage("assets/images/bober.jpg"),
                   ),
-                  const Spacer(),
-                  ImageSlideshow(
-                    indicatorRadius: 0,
-                    autoPlayInterval: 4200,
-                    indicatorColor: Colors.purple,
-                    onPageChanged: (value) {
-                      debugPrint("Next Page: $value");
-                    },
-                    isLoop: true,
-                    width: 180,
-                    children: [
-                      Image.asset(
-                        "assets/images/bluesky.jpg",
-                        fit: BoxFit.fitWidth,
-                      ),
-                      Image.asset(
-                        "assets/images/sunnyplace.jpg",
-                        fit: BoxFit.fitWidth,
-                      ),
-                      Image.asset(
-                        "assets/images/flowerbird.jpg",
-                        fit: BoxFit.fitWidth,
-                      ),
-                      Image.asset(
-                        "assets/images/snowplace.jpg",
-                        fit: BoxFit.fitWidth,
-                      ),
-                    ],
-                  ),
+                  Spacer(),
+                  MyImageSlider(),
                 ],
               ),
             ),
